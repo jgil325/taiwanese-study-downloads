@@ -4,9 +4,9 @@ A desktop analyzer and practice trainer for Taiwanese poker. Calculations and sa
 
 ## Download
 
-**[Download Taiwanese Study 0.1.0 for Mac](https://github.com/jgil325/taiwanese-study-downloads/releases/download/v0.1.0/Taiwanese-Study-Mac.dmg)**
+**[Download Taiwanese Study 0.1.1 for Mac](https://github.com/jgil325/taiwanese-study-downloads/releases/download/v0.1.1/Taiwanese-Study-Mac.dmg)**
 
-One universal download for **Apple Silicon and Intel**, requiring **macOS 13.3 or later**. [Release notes and checksum](https://github.com/jgil325/taiwanese-study-downloads/releases/tag/v0.1.0).
+One universal download for **Apple Silicon and Intel**, requiring **macOS 13.3 or later**. [Release notes and checksum](https://github.com/jgil325/taiwanese-study-downloads/releases/tag/v0.1.1).
 
 1. Open the DMG.
 2. Drag **Taiwanese Study** into **Applications**.
@@ -18,12 +18,12 @@ The first launch unpacks the included experimental 262,144-deal strategy. Allow 
 
 ## Inside the app
 
-- **Practice:** arrange seven cards with dragging, clicking, or keyboard shortcuts. Commit before seeing EV loss, standard errors, and the top five settings.
+- **Practice:** arrange seven cards with dragging, clicking, or keyboard shortcuts. Commit before seeing EV loss, standard errors, and the top five estimated settings. Unresolved leaders and random-setting fallback are displayed alongside results.
 - **Analyze:** compare all 105 settings against a frozen opponent strategy with Monte Carlo estimates.
 - **Study:** save decisions and notes, compare fixed matchups, and customize two-color or four-color decks.
 - **Train:** run local shared-strategy self-play, pause with a resumable checkpoint, and audit policies independently.
 
-“Training deals” counts the past self-play rounds used to train a policy. “Sampling budget” controls fresh scenarios for the current EV calculation. More samples reduce estimation uncertainty; they do not train the opponent policy. The included strategy is **experimental, not certified GTO**.
+“Training deals” counts the past self-play rounds used to train a policy. “Sampling budget” controls fresh scenarios for the current EV calculation. More samples reduce estimation uncertainty; they do not train the opponent policy. Study estimates require at least **100,000** samples; **Standard uses 250,000 by default**, and Deep uses **1,000,000**. More samples do not guarantee a resolved leader. The included strategy is **experimental, not certified GTO**, and still uses random settings for most unseen opponent hand classes.
 
 ## Data and updates
 
